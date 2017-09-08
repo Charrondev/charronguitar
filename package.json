@@ -1,0 +1,14 @@
+{
+    "name": "charronguitar",
+    "version": "2.0.0",
+    "description": "A small 1-page static site for charronguitar.com",
+    "main": "index.js",
+    "repository": "http://github.com/charrondev/charronguitar",
+    "author": "Adam Charron <adam@charrondev.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0"
+    }
+}

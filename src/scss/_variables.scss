@@ -1,0 +1,31 @@
+/*=============================================
+=            Variables
+=============================================*/
+
+$unit: 6px;
+$sidebar-width: 72px;
+
+$section-margin: 42px;
+
+$color-brand: #ffcd9d;
+$color-black: #2d2f3b;
+$color-white: #fafafa;
+$color-grey: #9f9f9f;
+$color-white--true: #fff;
+$color-line: rgba($color-black, 0.16);
+$color-line--white: rgba($color-white, 0.7);
+
+$font-family-base: "Open Sans";
+$font-size-base: 16px;
+$font-weight-base: 400;
+$line-height-base: 1.5;
+$body-color: $color-black;
+$body-bg: $color-white;
+$link-color: $color-brand;
+$link-hover-color: darken($color-brand, 0.07);
+$link-decoration: none;
+$link-hover-decoration: none;
+$table-cell-padding: $unit * 3;
+$text-muted: $color-grey;
+
+/*=====  End of Variablesrr  ======*/
