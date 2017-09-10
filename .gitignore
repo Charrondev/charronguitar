@@ -1,3 +1,4 @@
 node_modules
 Caddyfile
 logs/access.log
+logs/error.log

@@ -112,6 +112,10 @@ a {
     transition: background ease 0.2s, color ease 0.2s;
     cursor: pointer;
 
+    a {
+        color: inherit;
+    }
+
     &:hover,
     &:active,
     &:focus {

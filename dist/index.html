@@ -11,19 +11,19 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -34,6 +34,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+    <script async defer src="/js/app.js"></script>
 </head>
 
 <body>
@@ -66,9 +67,9 @@
                 </a>
             </div>
             <div class="Sidebar-links">
-                <a href="#" class="Sidebar-link">Facebook</a>
-                <a href="#" class="Sidebar-link Sidebar-link--twitter">Trwitter</a>
-                <a href="#" class="Sidebar-link">Youtube</a>
+                <a href="https://www.facebook.com/charronguitar.timothycharron" class="Sidebar-link">Facebook</a>
+                <!-- <a href="#" class="Sidebar-link Sidebar-link--twitter">Twitter</a> -->
+                <a href="https://www.youtube.com/channel/UCsRm2QDWJBrl6mHDRvoWVsg" class="Sidebar-link">Youtube</a>
             </div>
         </nav>
         <div class="Frame-body">
@@ -79,7 +80,7 @@
                         <h4 class="Hero-subtitle">Professional Service</h4>
                         <h1 class="Hero-title">High Quality<br>Custom Guitars</h1>
                         <div class="Hero-buttons">
-                            <button class="Button Button--outline">Contact Us</button>
+                            <button class="Button Button--outline"><a data-scroll href="#contact">Contact Us</a></button>
                             <button class="Button Button--outline">Our Services</button>
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                         instrument that your bring in.</p>
                     <div class="Line Line--half"></div>
                     <button class="Button">
-                        Contact Us
+                        <a data-scroll href="#contact">Contact Us</a>
                     </button>
                 </div>
             </section>
@@ -165,7 +166,7 @@
                                 & restoring cheap guitars and donating them to people who wouldn’t otherwise be able to afford
                                 them. A musical instrument can make a important difference in someone’s life so contact us
                                 to see how you can help too.</p>
-                            <button class="Button">Contact Us</button>
+                            <button class="Button"><a data-scroll href="#contact">Contact Us</a></button>
                         </div>
                         <div class="Donation-imageContainer">
                             <img class="Donation-image" src="/images/donation-guitars.jpg" alt="Guitars up for donation currently">
@@ -201,7 +202,7 @@
             </section>
             <footer class="Frame-footer Footer">
                 <div class="Footer-left"></div>
-                <div class="Footer-right">
+                <div id="contact" class="Footer-right">
                     <div class="Footer-horizontalImage"></div>
                     <img class="Footer-logo" src="images/footer-logo.png" alt="Charron Guitar Logo">
                     <div class="Footer-text">
@@ -230,12 +231,12 @@
                     </div>
                 </div>
             </footer>
+            <footer class="Subfooter">
+                <p>All Rights Reserved © Charron Guitar LLC.</p>
+                <p>Design & Code: Adam Charron</p>
+            </footer>
         </div>
     </div>
-    <footer class="Subfooter">
-        <p>All Rights Reserved © Charron Guitar LLC.</p>
-        <p>Design & Code: Adam Charron</p>
-    </footer>
 </body>
 
 </html>

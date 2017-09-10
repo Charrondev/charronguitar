@@ -94,11 +94,11 @@
         transform: rotate(270deg);
         transform-origin: center;
         height: 80vh;
-        margin-right: 18px;
 
         @include mq {
             height: initial;
             transform: none;
+            margin-right: 18px;
         }
     }
 
@@ -390,7 +390,7 @@
     &-left {
         flex: 1.2;
         align-self: stretch;
-        background: url('/images/footer-tim-vertical.png');
+        background: url('/images/footer-tim-vertical.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -416,7 +416,7 @@
 
     &-horizontalImage {
         height: 300px;
-        background: url('/images/footer-guitar-horizontal.png');
+        background: url('/images/footer-guitar-horizontal.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -521,6 +521,10 @@
     padding-right: $gutter;
     color: #9f9f9f;
     font-size: 14px;
+
+    p {
+        margin-bottom: 0;
+    }
 
     @include mq {
         display: block;

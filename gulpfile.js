@@ -30,7 +30,7 @@ function compile(watch) {
             .pipe(source("app.js"))
             .pipe(buffer())
             .pipe(sourcemaps.init({ loadMaps: true }))
-            .pipe(sourcemaps.write("./"))
+            .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("dist/js"));
     }
 
