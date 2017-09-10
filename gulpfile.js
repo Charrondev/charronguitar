@@ -10,6 +10,9 @@ const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const replace = require("gulp-replace");
+const rename = require("gulp-rename");
+const fs = require("fs");
 
 function swallowError(error) {
     // If you want details of the error in the console
@@ -81,6 +84,22 @@ gulp.task("watch", ["sass", "bundle"], () => {
     gulp.watch("dist/*.html").on("change", browserSync.reload);
 });
 
+gulp.task("inline", ["sass"], () => {
+    // in your task
+    return gulp
+        .src("./dist/index.html")
+        .pipe(
+            replace(`<link rel="stylesheet" href="css/app.css">`,
+                s => {
+                    const style = fs.readFileSync("./dist/css/app.css", "utf8");
+                    return "<style>\n" + style + "\n</style>";
+                }
+            )
+        )
+        .pipe(rename("index-inline.html"))
+        .pipe(gulp.dest("./dist"));
+});
+
 gulp.task("default", ["watch"], () => {});
 
-gulp.task("build", ["bundle", "sass"]);
+gulp.task("build", ["bundle", "inline"], () => {});
