@@ -1,5 +1,10 @@
+@import "font";
 @import "variables";
 @import 'reboot';
 @import "utilities";
 @import "components";
 @import "sections";
+
+img {
+    max-width: 90vw;
+}

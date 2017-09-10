@@ -11,31 +11,70 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#2F3BA2">
+    <meta name="theme-color" content="#CF6E60">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-phone" viewBox="0 0 32 32">
+                <title>phone</title>
+                <path d="M24 0h-16c-1.658 0-3 1.343-3 3v26c0 1.658 1.343 3 3 3h16c1.656 0 3-1.344 3-3v-26c0-1.658-1.344-3-3-3zM25 29c0 0.551-0.449 1-1 1h-16c-0.552 0-1-0.447-1-1v-2.004h18v2.004zM25 25.996h-18v-19.996h18v19.996zM25 5h-18v-2c0-0.552 0.448-1 1-1h16c0.551 0 1 0.448 1 1v2zM18 3.5c0 0.276-0.225 0.5-0.5 0.5h-3c-0.277 0-0.5-0.224-0.5-0.5v0c0-0.277 0.223-0.5 0.5-0.5h3c0.275 0 0.5 0.223 0.5 0.5v0zM17 28.496c0 0.275-0.225 0.5-0.5 0.5h-1c-0.276 0-0.5-0.225-0.5-0.5v0c0-0.277 0.224-0.5 0.5-0.5h1c0.275 0 0.5 0.223 0.5 0.5v0z"></path>
+            </symbol>
+            <symbol id="icon-mail" viewBox="0 0 32 32">
+                <title>mail</title>
+                <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
     <div class="Frame">
         <nav class="Frame-sidebar Sidebar">
-            <div class="Sidebar-hamburger"></div>
+            <div class="Sidebar-icons">
+                <a href="tel:603-204-550" class="Sidebar-icon">
+                    <svg class="icon icon-phone">
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>
+                </a>
+                <a href="mailto:tim@charronguitar.com" class="Sidebar-icon">
+                    <svg class="icon icon-mail">
+                        <use xlink:href="#icon-mail"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="Sidebar-links">
                 <a href="#" class="Sidebar-link">Facebook</a>
-                <a href="#" class="Sidebar-link">Twitter</a>
+                <a href="#" class="Sidebar-link Sidebar-link--twitter">Trwitter</a>
                 <a href="#" class="Sidebar-link">Youtube</a>
             </div>
         </nav>
         <div class="Frame-body">
             <section class="Frame-hero Hero">
                 <div class="Hero-content">
-                    <img src="/images/logo.png" alt="Charron Guitar Logo">
+                    <img class="Hero-logo" src="/images/logo.png" alt="Charron Guitar Logo">
                     <div class="Hero-text">
                         <h4 class="Hero-subtitle">Professional Service</h4>
                         <h1 class="Hero-title">High Quality<br>Custom Guitars</h1>
@@ -45,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="Hero-card">
+                <div class="Hero-card Card">
                     <h2 class="Title">The Shop</h2>
                     <p>Charron Guitars was born out of lifelong passion for guitars and music and years of practice at the workbench.</p>
                     <p>We offer proud to offer full service guitar repair, modification and restoration. From restringing or
@@ -58,92 +97,106 @@
                 </div>
             </section>
             <section class="Frame-section Services">
-                <h2 class="Title">Our Services</h2>
-                <div class="Line"></div>
-                <div class="Services-row">
-                    <div class="Services-column">
-                        <h3 class="Subtitle">Types of Instruments</h3>
-                        <ul class="Services-list">
-                            <li class="Services-item">Electric and acoustic guitars</li>
-                            <li class="Services-item">Bass Guitars</li>
-                            <li class="Services-item">Violins</li>
-                            <li class="Services-item">Mandolins</li>
-                            <li class="Services-item">Banjos</li>
-                            <li class="Services-item">Ukeleles</li>
-                        </ul>
-                    </div>
-                    <div class="Services-column">
-                        <h3 class="Subtitle">Maintenance & Modifications</h3>
-                        <ul class="Services-list">
-                            <li class="Services-item">Meticulous and professional setups</li>
-                            <li class="Services-item">Precision fret leveling, dressing, and replacement</li>
-                            <li class="Services-item">Electronics (pickups, wiring, shielding, peizos)</li>
-                            <li class="Services-item">Neck reseting</li>
-                            <li class="Services-item">Nuts, saddles, and zero-frets</li>
-                            <li class="Services-item">Restringing</li>
-                        </ul>
+                <div class="Container">
+                    <h2 class="Title">Our Services</h2>
+                    <div class="Line"></div>
+                    <div class="Section Services-row">
+                        <div class="Services-column">
+                            <h3 class="Subtitle">Types of Instruments</h3>
+                            <ul class="Services-list">
+                                <li class="Services-item">Electric and acoustic guitars</li>
+                                <li class="Services-item">Bass Guitars</li>
+                                <li class="Services-item">Violins</li>
+                                <li class="Services-item">Mandolins</li>
+                                <li class="Services-item">Banjos</li>
+                                <li class="Services-item">Ukeleles</li>
+                            </ul>
+                        </div>
+                        <div class="VerticalLine"></div>
+                        <div class="Services-column">
+                            <h3 class="Subtitle">Maintenance & Modifications</h3>
+                            <ul class="Services-list">
+                                <li class="Servrices-item">Meticulous and professional setups</li>
+                                <li class="Services-item">Precision fret leveling, dressing, and replacement</li>
+                                <li class="Services-item">Electronics (pickups, wiring, shielding, peizos)</li>
+                                <li class="Services-item">Neck reseting</li>
+                                <li class="Services-item">Nuts, saddles, and zero-frets</li>
+                                <li class="Services-item">Restringing</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="Services-row Services-row--image">
-                    <div class="Services-column">
-                        <h3 class="Subtitle Subtitle--white">Restoration</h3>
-                        <ul class="Services-list">
-                            <li class="Services-item--white">Electronics Repairs</li>
-                            <li class="Services-item--white">Cracks and body damage</li>
-                            <li class="Services-item--white">Broken Necks</li>
-                            <li class="Services-item--white">Bridge repair and replacement</li>
-                            <li class="Services-item--white">Polishing and paint jobs</li>
-                        </ul>
-                    </div>
-                    <div class="Services-column">
-                        <h3 class="Subtitle Subtitle--white">Custom Builds and Designs</h3>
-                        <ul class="Services-list">
-                            <li class="Services-item--white">Design your own guitar body</li>
-                            <li class="Services-item--white">Replicate and existing style</li>
-                            <li class="Services-item--white">Choose your own tonewood</li>
-                            <li class="Services-item--white">Custom wiring and electronics</li>
-                            <li class="Services-item--white">Buzz Feeton intonation system</li>
-                            <li class="Services-item--white">Custom paintjobs and visual design</li>
-                        </ul>
+                <div class="Services-background Section">
+                    <div class="Container">
+                        <div class="Services-row">
+                            <div class="Services-column">
+                                <h3 class="Subtitle Subtitle--white">Restoration</h3>
+                                <ul class="Services-list">
+                                    <li class="Services-item">Electronics Repairs</li>
+                                    <li class="Services-item">Cracks and body damage</li>
+                                    <li class="Services-item">Broken Necks</li>
+                                    <li class="Services-item">Bridge repair and replacement</li>
+                                    <li class="Services-item">Polishing and paint jobs</li>
+                                </ul>
+                            </div>
+                            <div class="VerticalLine VerticalLine--white"></div>
+                            <div class="Services-column">
+                                <h3 class="Subtitle Subtitle--white">Custom Builds and Designs</h3>
+                                <ul class="Services-list">
+                                    <li class="Services-item">Design your own guitar body</li>
+                                    <li class="Services-item">Replicate and existing style</li>
+                                    <li class="Services-item">Choose your own tonewood</li>
+                                    <li class="Services-item">Custom wiring and electronics</li>
+                                    <li class="Services-item">Buzz Feeton intonation system</li>
+                                    <li class="Services-item">Custom paintjobs and visual design</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="Frame-section Donation">
-                <div class="Donation-row">
-                    <div class="Donation-text">
-                        <h2 class="Title">Donation & Charity</h2>
-                        <div class="Line"></div>
-                        <p>Music is gift. In an effort to reach out to the community we have introduced a program repairing
-                            & restoring cheap guitars and donating them to people who wouldn’t otherwise be able to afford
-                            them. A musical instrument can make a important difference in someone’s life so contact us to
-                            see how you can help too.</p>
-                        <button class="Button">Contact Us</button>
+                <div class="Container">
+                    <div class="Donation-row Section">
+                        <div class="Donation-text">
+                            <h2 class="Title">Donation <br>& Charity</h2>
+                            <div class="Line"></div>
+                            <p>Music is gift. In an effort to reach out to the community we have introduced a program repairing
+                                & restoring cheap guitars and donating them to people who wouldn’t otherwise be able to afford
+                                them. A musical instrument can make a important difference in someone’s life so contact us
+                                to see how you can help too.</p>
+                            <button class="Button">Contact Us</button>
+                        </div>
+                        <div class="Donation-imageContainer">
+                            <img class="Donation-image" src="/images/donation-guitars.jpg" alt="Guitars up for donation currently">
+                        </div>
                     </div>
-                    <img src="/images/donation-guitars.jpg" alt="Guitars up for donation currently">
+                    <div class="Donation-quoteTitle">
+                        <span class="Donation-quoteMark">“</span>
+                        <h5 class="Donation-quoteName"><span class="Line Line--inline"></span>Timothy Charron</h5>
+                    </div>
+                    <blockquote class="Donation-quote Section">
+                        <p>We’re currently accepting donations of older guitars that may need a bit of work, a bit of repair,
+                            or can be used for pieces/parts.</p>
+                        <p>We’ll fix them up and forward them on to folks who would not otherwise be able to get their hands
+                            on a proper guitar.</p>
+                        <p>So if you have one to give, or know someone who could use a hand getting one, please send us a note.
+                            Thanks!
+                        </p>
+                    </blockquote>
                 </div>
-                <div class="Donation-quoteTitle">
-                    <span class="Donation-quoteMark">“</span>
-                    <h5 class="Donation-quoteName"><span class="Line--inline"></span>Timothy Charron</h5>
-                </div>
-                <blockquote class="Donation-quote">
-                    <p>We’re currently accepting donations of older guitars that may need a bit of work, a bit of repair, or
-                        can be used for pieces/parts.</p>
-                    <p>We’ll fix them up and forward them on to folks who would not otherwise be able to get their hands on
-                        a proper guitar.</p>
-                    <p>So if you have one to give, or know someone who could use a hand getting one, please send us a note.
-                        Thanks!
-                    </p>
-                </blockquote>
             </section>
             <section class="Frame-section Owner">
-                <div class="Owner-card">
-                    <h1 class="Title">The Owner</h1>
-                    <p>Drawn by a passion for guitars, I attended the Proin ornare ligula eu tellus tempus elementum. Aenean
-                        bibendum iaculis mi, nec blandit lacus interdum vitae.<br><br>Vestibulum non nibh risus, a scelerisque
-                        purus.
-                        <br>Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate
-                        interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna.</p>
-                    <div><span class="Line--inline"></span>Timothy Charron, Luthier</div>
+                <div class="Container">
+                    <div class="Owner-card Card">
+                        <h1 class="Title">The Owner</h1>
+                        <p>Drawn by a passion for guitars, I attended the Proin ornare ligula eu tellus tempus elementum. Aenean
+                            bibendum iaculis mi, nec blandit lacus interdum vitae.<br><br>Vestibulum non nibh risus, a scelerisque
+                            purus.
+                            <br>Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate
+                            interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna.</p>
+                        <div class="Owner-quoteName"><span class="Line--inline"></span>Timothy Charron, Luthier</div>
+                    </div>
                 </div>
             </section>
             <footer class="Frame-footer Footer">
@@ -151,21 +204,30 @@
                 <div class="Footer-right">
                     <div class="Footer-horizontalImage"></div>
                     <img class="Footer-logo" src="images/footer-logo.png" alt="Charron Guitar Logo">
-                    <h3 class="Subtitle">Contact</h3>
-                    <div class="Line"></div>
-                    <h2 class="Title">Get in<br>touch with Tim</h2>
-                    <p>Curious about something? We appreciate all types of questions. Whether you are looking for a repair or want to spec out something
-                    completely new, we look forward to getting in touch with you. Allow at least 24 hours and use the form
-                    below or contact me by phone <strong><a href="tel:514-638-1845">514-638-1845</a></strong><p>.
-                </div>
-                <div class="Footer-form">
-                    <input type="text" placeholder="NAME" class="Input">
-                    <div class="Footer-formRow">
-                        <input type="text" placeholder="PHONE" class="Input Input-half">
-                        <input type="text" placeholder="PHONE" class="Input Input-half">
+                    <div class="Footer-text">
+                        <h3 class="Subtitle">Contact</h3>
+                        <div class="Line"></div>
+                        <h2 class="Title">Get in<br>touch with Tim</h2>
+                        <p>Curious about something? We appreciate all types of questions. Whether you are looking for a repair
+                            or want to spec out something completely new, we look forward to getting in touch with you. Allow
+                            at least 24 hours and use the form below or contact me by phone <strong><a href="tel:514-638-1845">514-638-1845</a></strong>.</p>
                     </div>
-                    <textarea name="MessageBody" id="messagebody" cols="30" rows="10"></textarea>
-                    <button type="submit">Send Your Message</button>
+                </div>
+                <div class="Footer-formWrapper">
+                    <div class="Footer-spacer"></div>
+                    <div class="Footer-formContainer">
+                        <div class="Footer-form Form">
+                            <input class="Form-input" type="text" placeholder="NAME" class="Input">
+                            <div class="Footer-formRow">
+                                <input class="Form-input" type="text" placeholder="PHONE" class="Input Input-half">
+                                <input class="Form-input" type="text" placeholder="PHONE" class="Input Input-half">
+                            </div>
+                            <textarea class="Form-input Form-text" name="MessageBody" id="messagebody" cols="30" rows="10"></textarea>
+                            <div class="Form-buttonContainer">
+                                <button class="Button Form-button" type="submit">Send Your Message</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>

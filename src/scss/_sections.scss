@@ -1,0 +1,531 @@
+.Section {
+    margin-bottom: $section-margin;
+}
+
+.Frame {
+    &-sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: $sidebar-width;
+
+        @include mq {
+            right: 0;
+            bottom: initial;
+            height: 56px;
+            width: 100vw;
+        }
+    }
+
+    &-body {
+        width: calc(100vw - #{$sidebar-width});
+        margin-left: $sidebar-width;
+
+        @include mq {
+            margin-top: 56px;
+            width: 100vw;
+            margin-left: 0;
+        }
+    }
+}
+
+.Frame-hero {
+    background: url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Sidebar {
+    border-left: $color-brand 4px solid;
+    overflow: hidden;
+    background: $color-white;
+    z-index: 100;
+    box-shadow: $box-shadow;
+
+    @include mq {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: none;
+        border-top: $color-brand 4px solid;
+        padding-top: 2px;
+    }
+
+    &-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        margin-left: 18px;
+
+        @include mq {
+            flex-direction: row;
+            margin-top: 0;
+        }
+    }
+
+    &-icon {
+        color: $color-black;
+        width: 30px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 30px;
+        margin-bottom: 18px;
+        cursor: pointer;
+        transition: color 0.2s ease;
+        margin-right: 18px;
+
+        @include mq {
+            margin-top: 24px;
+        }
+
+        &:hover {
+            color: $color-brand;
+        }
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        transform: rotate(270deg);
+        transform-origin: center;
+        height: 80vh;
+        margin-right: 18px;
+
+        @include mq {
+            height: initial;
+            transform: none;
+        }
+    }
+
+    &-link {
+        margin-right: 32px;
+        color: #A7A7A7;
+        font-family: 'Fontin Sans Caps';
+        letter-spacing: 2px;
+        font-size: 14px;
+
+        &--twitter {
+            @include mq(400px) {
+                display: none;
+            }
+        }
+
+        @include mq {
+            margin-right: 0;
+            margin-left: 18px;
+        }
+    }
+}
+
+.Hero {
+    @include gutter;
+
+    padding-top: 18px;
+    margin-bottom: 132px + $section-margin;
+
+    @include mq(700px) {
+        text-align: center;
+    }
+
+    &-logo {
+        height: 320px;
+        width: 320px;
+
+        @include mq(930px) {
+            width: 260px;
+            height: 260px;
+        }
+
+        @include mq(700px) {
+            display: inline-block;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq(700px) {
+            display: block;
+        }
+    }
+
+    &-text {
+        text-align: right;
+
+        @include mq(700px) {
+            text-align: center;
+        }
+    }
+
+    &-title {
+        color: $color-white;
+        text-shadow: $text-shadow;
+    }
+
+    &-subtitle {
+        color: $color-brand-secondary;
+        font-family: 'Fontin Sans Caps', sans-serif;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-shadow: 0 1px 2px black;
+    }
+
+    &-card {
+        max-width: 700px;
+        transform: translateY(50%);
+        margin: 0 auto;
+        margin-top: -160px;
+
+        @include mq {
+            margin-top: -180px;
+        }
+
+        @include mq(400px) {
+            margin-top: -190px;
+        }
+    }
+}
+
+.Services {
+    margin-bottom: $section-margin * 2;
+    padding-top: 36px;
+
+    @include mq {
+        padding-top: 56px;
+        margin-bottom: $section-margin;
+    }
+
+    @include mq(400px) {
+        padding-top: 64px;
+    }
+
+    &-row {
+        display: flex;
+
+        @include mq(750px) {
+            display: block;
+        }
+    }
+
+    &-column:first-child {
+        // margin-right: 36px;
+        width: 50%;
+
+
+        @include mq(750px) {
+            width: auto;
+        }
+    }
+
+    &-background {
+        background: url('/images/services-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: $color-white;
+        padding-top: $section-margin;
+        padding-bottom: $section-margin;
+
+        * {
+            text-shadow: $text-shadow;
+        }
+
+        @include mq(750px) {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+
+    &-item {
+        line-height: 36px;
+    }
+
+    .VerticalLine {
+        align-self: center;
+
+
+        @include mq(750px) {
+            display: none;
+        }
+    }
+}
+
+.Donation {
+    &-row {
+        display: flex;
+        width: 100%;
+
+        @include mq(850px) {
+            display: block;
+        }
+
+        @include mq {
+            margin-top: -30px;
+        }
+    }
+
+    &-text {
+        flex: 1;
+        padding-right: $gutter;
+    }
+
+    &-imageContainer {
+        flex: 1.5;
+
+        @include mq(850px) {
+            padding: 72px $gutter;
+            padding-bottom: 0;
+        }
+
+        @include mq {
+            padding: 36px $gutter;
+            padding-bottom: 0;
+        }
+    }
+
+    &-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &-quoteTitle {
+        display: flex;
+        align-items: center;
+
+        @include mq {
+            margin-top: -36px;
+        }
+    }
+
+    &-quoteMark {
+        font-size: 56px;
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        display: inline-block;
+        padding-top: 4px;
+    }
+
+    &-quoteName {
+        display: flex;
+        align-items: center;
+        color: rgba($color-black, 0.5);
+        font-weight: 400;
+        font-size: $font-size-base;
+    }
+
+    &-quote {
+        background: #F1F1F1;
+        color: rgba($color-black, 0.75);
+        padding: $gutter;
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+        line-height: 1.5;
+
+        @include mq(600px) {
+            font-size: 20px;
+            padding: 12px 18px;
+        }
+    }
+}
+
+.Owner {
+    background: url('/images/tim.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: $gutter;
+
+    @include mq {
+        padding: 18px;
+
+        .Container {
+            padding: 0;
+        }
+    }
+
+    &-card {
+        background: $color-white;
+        max-width: 440px;
+        text-align: center;
+        border-radius: 3px;
+
+        @include mq {
+            width: 100%;
+            max-width: initial;
+        }
+    }
+
+    &-quoteName {
+        display: flex;
+        align-items: center;
+        color: rgba($color-black, 0.5);
+        font-weight: 400;
+        justify-content: center;
+
+        .Line--inline {
+            background-color: rgba($color-black, 0.5);
+            margin-left: 0;
+        }
+    }
+}
+
+.Footer {
+    @include gutter;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    @include mq($breakpoint-tablet) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-left {
+        flex: 1.2;
+        align-self: stretch;
+        background: url('/images/footer-tim-vertical.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @include mq(900px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 300px;
+            z-index: 1;
+        }
+
+        @include mq(700px) {
+            display: none;
+        }
+    }
+
+    &-right {
+        flex: 2;
+        position: relative;
+    }
+
+    &-horizontalImage {
+        height: 300px;
+        background: url('/images/footer-guitar-horizontal.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include mq(900px) {
+            margin-left: 200px;
+        }
+
+        @include mq(700px) {
+            margin-left: 0;
+        }
+    }
+
+    &-logo {
+        position: absolute;
+        top: 300px;
+        height: 220px;
+        width: 220px;
+        left: 50%;
+        transform: translate3d(-50%, -26%, 0);
+
+        @include mq(700px) {
+            right: 33px;
+            left: initial;
+            transform: translate3d(0, -26%, 0);
+        }
+
+        @include mq(400px) {
+            width: 180px;
+            height: 180px;
+        }
+
+        @include mq(350px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &-text {
+        padding: $gutter;
+        padding-bottom: 0;
+
+        a {
+            font-weight: 900;
+            color: $color-black;
+        }
+    }
+
+    &-formWrapper {
+        width: 100%;
+        display: flex;
+    }
+
+    &-spacer {
+        flex: 1.2;
+
+        @include mq(900px) {
+            display: none;
+        }
+    }
+
+    &-formContainer {
+        flex: 2;
+    }
+
+    &-form {
+        padding: $gutter;
+    }
+
+    &-formRow {
+        display: flex;
+
+        * {
+            flex:  1;
+        }
+
+        :first-child {
+            margin-right: $gutter;
+
+            @include mq {
+                margin-right: 18px;
+            }
+        }
+    }
+
+    .Form-input {
+        margin-bottom: $gutter;
+    }
+
+    .Form-buttonContainer {
+        text-align: center;
+    }
+}
+
+.Subfooter {
+    background: $color-white--true;
+    border-top: 1px solid #E4E4E4;
+    display: flex;
+    justify-content: space-between;
+    line-height: 72px;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    color: #9f9f9f;
+    font-size: 14px;
+
+    @include mq {
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        padding: 18px;
+    }
+}

@@ -1,6 +1,8 @@
-var gulp = require("gulp");
-var browserSync = require("browser-sync").create();
-var sass = require("gulp-sass");
+const gulp = require("gulp");
+const browserSync = require("browser-sync").create();
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
 
 // Static Server + watching scss/html files
 gulp.task("serve", ["sass"], function() {
@@ -20,6 +22,7 @@ gulp.task("sass", function() {
     return gulp
         .src("src/scss/*.scss")
         .pipe(sass())
+        .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });

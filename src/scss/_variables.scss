@@ -5,9 +5,15 @@
 $unit: 6px;
 $sidebar-width: 72px;
 
+$item-padding: $unit * 4;
+$max-width: 1200px;
+$gutter: 36px;
+
 $section-margin: 42px;
 
-$color-brand: #ffcd9d;
+// Colors
+$color-brand: #CF6E60;
+$color-brand-secondary: #f78e7f;
 $color-black: #2d2f3b;
 $color-white: #fafafa;
 $color-grey: #9f9f9f;
@@ -15,6 +21,9 @@ $color-white--true: #fff;
 $color-line: rgba($color-black, 0.16);
 $color-line--white: rgba($color-white, 0.7);
 
+$text-shadow: 0 1px 2px rgba(#000, 0.3);
+
+// Reboot
 $font-family-base: "Open Sans";
 $font-size-base: 16px;
 $font-weight-base: 400;
@@ -27,5 +36,10 @@ $link-decoration: none;
 $link-hover-decoration: none;
 $table-cell-padding: $unit * 3;
 $text-muted: $color-grey;
+$box-shadow: 0 1px 2px 0 rgba($color-black, 0.14);
+
+$breakpoint-tablet: 1000px;
+$breakpoint-tablet-small: 900px;
+$breakpoint-mobile: 600px;
 
 /*=====  End of Variablesrr  ======*/

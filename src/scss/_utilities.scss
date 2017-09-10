@@ -1,0 +1,16 @@
+@mixin mq($maximum-width: $breakpoint-mobile) {
+    @media screen and (max-width: $maximum-width) {
+        @content;
+    }
+}
+
+
+@mixin gutter {
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    @include mq(700px) {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
