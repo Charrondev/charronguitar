@@ -8,3 +8,55 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/subset-OpenSans-Light.eot");
+    src: url("/fonts/subset-OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/subset-OpenSans-Light.woff") format("woff"),
+        url("/fonts/subset-OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/subset-OpenSans-Bold.eot");
+    src: url("/fonts/subset-OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/subset-OpenSans-Bold.woff") format("woff"),
+        url("/fonts/subset-OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/subset-OpenSans.eot");
+    src: url("/fonts/subset-OpenSans.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/subset-OpenSans.woff") format("woff"),
+        url("/fonts/subset-OpenSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/subset-PlayfairDisplay-Regular.eot");
+    src: url("/fonts/subset-PlayfairDisplay-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/subset-PlayfairDisplay-Regular.woff") format("woff"),
+        url("/fonts/subset-PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/subset-PlayfairDisplay-Bold.eot");
+    src: url("/fonts/subset-PlayfairDisplay-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/subset-PlayfairDisplay-Bold.woff") format("woff"),
+        url("/fonts/subset-PlayfairDisplay-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
