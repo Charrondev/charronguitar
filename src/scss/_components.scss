@@ -119,6 +119,8 @@ a {
     &:hover,
     &:active,
     &:focus {
+        outline: none;
+        box-shadow: none;
         background: lighten($color-brand, 4%);
     }
 
