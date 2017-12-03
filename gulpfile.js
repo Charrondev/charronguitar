@@ -100,6 +100,10 @@ gulp.task("inline", ["sass"], () => {
         .pipe(gulp.dest("./dist"));
 });
 
-gulp.task("default", ["watch"], () => {});
+gulp.task("default", ["watch"], () => {
+    process.exit();
+});
 
-gulp.task("build", ["bundle", "inline"], () => {});
+gulp.task("build", ["bundle", "inline"], () => {
+    process.exit();
+});

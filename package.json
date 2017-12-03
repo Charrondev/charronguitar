@@ -21,6 +21,10 @@
         "vinyl-source-stream": "^1.1.0",
         "watchify": "^3.9.0"
     },
+    "scripts": {
+        "build": "gulp build",
+        "watch": "gulp"
+    },
     "dependencies": {
         "babel-preset-env": "^1.6.0",
         "smooth-scroll": "^12.1.5"
